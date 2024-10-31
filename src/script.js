@@ -113,10 +113,10 @@ class Game {
       for (let i = 0; i < countries.length; i++) {
         this.#countries.push(countries[i].name.common)
       }
-      const badCountry = this.#countries.indexOf('Åland Islands')
-      if (badCountry > -1) {
-        this.#countries.splice(badCountry, 1)
-      }
+      const countriesToRemove = ['Curaçao', 'Åland Islands'];
+
+      this.#countries = this.#countries.filter(country => !countriesToRemove.includes(country));
+
       return this.#countries
     } catch (err) {
       country.textContent = 'ინტერნეტკავშირი გაწყდა'
@@ -195,9 +195,6 @@ class Game {
       this.getRandomCountry(this.addCountries('oceania'))
     }
     if (this.#playerStage === 3) {
-      this.getRandomCountry(this.addCountries('africa'))
-    }
-    if (this.#playerStage === 4) {
       this.getRandomCountry(this.addCountries('americas'))
     }
   }
