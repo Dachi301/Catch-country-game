@@ -1,3 +1,7 @@
+<img width="1433" alt="country-1" src="https://github.com/user-attachments/assets/7ff97649-e55c-4ce6-bee0-220ea8c70f0e" />
+
+<img width="1433" alt="country-2" src="https://github.com/user-attachments/assets/3983945e-0751-41b2-a428-c40a5ff1351d" />
+
 # Catch-Country Game
 
 Follow these steps to clone and run the project locally:
